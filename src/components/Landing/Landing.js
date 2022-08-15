@@ -12,8 +12,8 @@ import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
+    FaGitlab,
+    FaBlog
 } from 'react-icons/fa';
 
 function Landing() {
@@ -114,26 +114,26 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {socialsData.gitlab && (
                             <a
-                                href={socialsData.youtube}
+                                href={socialsData.gitlab}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                <FaGitlab
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
+                                    aria-label='GitLab'
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {socialsData.blog && (
                             <a
-                                href={socialsData.blogger}
+                                href={socialsData.blog}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaBlogger
+                                <FaBlog
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Blogger'
