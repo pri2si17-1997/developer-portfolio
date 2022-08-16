@@ -1,5 +1,6 @@
 .education {
-    min-height: 100vh;
+    min-height: 200px;
+    max-height: 500px;
 }
 
 .education-body {
@@ -130,7 +131,7 @@
     .education-card {
         padding: 1rem;
         margin-bottom: 1.5rem;
-        height: 130px;
+        height: 180px;
     }
     .educard-img {
         border-radius: 50%;
@@ -164,7 +165,11 @@
 }
 
 @media screen and (max-width: 400px) {
-
+    .education-card {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        height: 180px;
+    }
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
