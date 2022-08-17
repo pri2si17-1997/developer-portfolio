@@ -1,7 +1,6 @@
 {
   "name": "pri2si17-portfolio",
   "version": "0.1.0",
-  "homepage": "https://pri2si17-1997.github.io/pri2si17-portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.2",
@@ -25,8 +24,6 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts --openssl-legacy-provider test",
