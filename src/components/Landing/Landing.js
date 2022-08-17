@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Button } from '@material-ui/core';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 
 import './Landing.css';
@@ -13,7 +12,7 @@ import {
     FaLinkedin,
     FaGithub,
     FaGitlab,
-    FaBlog
+    FaBlog,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -176,16 +175,17 @@ function Landing() {
                                     </Button>
                                 </a>
                             )}
-                            <NavLink
-                                to='/#contacts'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <Button className={classes.contactBtn}>
-                                    Contact
-                                </Button>
-                            </NavLink>
+                            {
+                                socialsData.email && (
+                                    <a
+                                        href={`mailto:${socialsData.email}`}
+                                    >
+                                        <Button className={classes.contactBtn}>
+                                            Contact
+                                        </Button>
+                                    </a>
+
+                            )}
                         </div>
                     </div>
                 </div>

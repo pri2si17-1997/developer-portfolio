@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/Priyanshu_Sinha_Resume_MS_HI_Full.pdf'
 import profilephoto from '../assets/profilephoto/profile.jpg'
 
 export const headerData = {
