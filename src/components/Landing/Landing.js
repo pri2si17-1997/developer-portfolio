@@ -59,7 +59,8 @@ function Landing() {
                 border: `3px solid ${theme.tertiary}`,
             },
             [t.breakpoints.down('sm')]: {
-                display: 'none',
+               display: 'flex',
+               width: '180px'
             },
         },
     }));
