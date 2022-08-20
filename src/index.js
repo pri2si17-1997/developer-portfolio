@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.render(
     <ThemeContextProvider>
-      <App />
+        <App />
     </ThemeContextProvider>,
   document.getElementById('root')
 );

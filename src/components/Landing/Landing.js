@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Button } from '@material-ui/core';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 
 import './Landing.css';
@@ -12,8 +11,8 @@ import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
+    FaGitlab,
+    FaBlog,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -60,7 +59,8 @@ function Landing() {
                 border: `3px solid ${theme.tertiary}`,
             },
             [t.breakpoints.down('sm')]: {
-                display: 'none',
+               display: 'flex',
+               width: '180px'
             },
         },
     }));
@@ -114,26 +114,26 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {socialsData.gitlab && (
                             <a
-                                href={socialsData.youtube}
+                                href={socialsData.gitlab}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                <FaGitlab
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
+                                    aria-label='GitLab'
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {socialsData.blog && (
                             <a
-                                href={socialsData.blogger}
+                                href={socialsData.blog}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaBlogger
+                                <FaBlog
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Blogger'
@@ -167,7 +167,7 @@ function Landing() {
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
-                                    download='resume'
+                                    download={headerData.resumeName}
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -176,16 +176,17 @@ function Landing() {
                                     </Button>
                                 </a>
                             )}
-                            <NavLink
-                                to='/#contacts'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <Button className={classes.contactBtn}>
-                                    Contact
-                                </Button>
-                            </NavLink>
+                            {
+                                socialsData.email && (
+                                    <a
+                                        href={`mailto:${socialsData.email}`}
+                                    >
+                                        <Button className={classes.contactBtn}>
+                                            Contact
+                                        </Button>
+                                    </a>
+
+                            )}
                         </div>
                     </div>
                 </div>

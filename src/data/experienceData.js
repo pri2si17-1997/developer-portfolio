@@ -1,23 +1,30 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'Indiana University-Purdue University, Indiana, USA',
+        jobtitle: 'Graduate Research Assistant',
+        startYear: 'August 2021',
+        endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
+        company: 'Labcorp, New Jersey, USA',
+        jobtitle: 'Data Scientist Intern',
+        startYear: 'May 2022',
+        endYear: 'August 2022'
     },
     {
         id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
-        startYear: '2020',
-        endYear: 'Present'
+        company: 'Mentor Graphics India Pvt. Ltd. (Siemens DISW), Noida, India',
+        jobtitle: 'Senior Member Technical Staff',
+        startYear: 'June 2018',
+        endYear: 'August 2021'
+    },
+    {
+        id: 4,
+        company: 'Mentor Graphics India Pvt. Ltd. (Siemens DISW), Noida, India',
+        jobtitle: 'Intern',
+        startYear: 'February 2018',
+        endYear: 'June 2021'
     },
 ]
