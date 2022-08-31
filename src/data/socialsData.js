@@ -4,5 +4,6 @@ export const socialsData = {
     twitter: 'https://twitter.com/pri2si17',
     gitlab: 'https://gitlab.com/pksinha217',
     blog: 'https://pri2si17.hashnode.dev/',
-    email: 'priyanshu_sinha@outlook.com'
+    email: 'priyanshu_sinha@outlook.com',
+    google_scholar: 'https://scholar.google.com/citations?user=9w0Q5DgAAAAJ&hl=en'
 }

@@ -15,6 +15,10 @@ import {
     FaBlog,
 } from 'react-icons/fa';
 
+import {
+    SiGooglescholar
+} from 'react-icons/si';
+
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
 
@@ -85,6 +89,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='LinkedIn'
+                                />
+                            </a>
+                        )}
+                        {socialsData.google_scholar && (
+                            <a
+                                href={socialsData.google_scholar}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <SiGooglescholar
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='GoogleScholar'
                                 />
                             </a>
                         )}
